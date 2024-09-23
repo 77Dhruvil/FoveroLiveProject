@@ -24,7 +24,7 @@ class LoginPage:  #TODO - 4. Encapsulation
         return self.driver.find_element(*LoginPage.signin)
 
 
-    def login_to_vwo(self, eml, pwd):
+    def  login_to_vwo(self, eml, pwd):
         self.get_email().send_keys(eml)
         self.get_password().send_keys(pwd)
         self.get_signin().click()

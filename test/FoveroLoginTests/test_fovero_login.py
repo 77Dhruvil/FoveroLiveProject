@@ -21,7 +21,7 @@ def setup():
 @allure.epic("Fovero Login Test")
 @allure.feature("TC#1 - Fovero App Positive Test")
 @pytest.mark.positive
-def test_vwo_login_positive(setup):
+def test_fovero_login_positive(setup):
     login_page = LoginPage(driver=setup)
     login_page.login_to_vwo(eml="Dhruvil.patel@concettolabs.com", pwd="Devil@123")
     # dashboardPage = DashboardPage(driver=setup)
