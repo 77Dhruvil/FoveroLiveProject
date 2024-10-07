@@ -3,6 +3,7 @@ import pytest
 import selenium
 from selenium import webdriver
 import allure
+
 from allure_commons.types import AttachmentType
 
 from PageObjects.pom.dashboard import DashboardPage
@@ -31,8 +32,6 @@ def test_fovero_dashboard_positive(setup):
     test_fovero_login_positive(setup)
     time.sleep(15)
     dashboardPage = DashboardPage(driver=setup)
-#    dashboardPage.get_user_logged_in()
-#    assert "Dhruvil Patel" in dashboardPage.dashboard_fovero()
     dashboardPage.dashboard_fovero()
     time.sleep(15)
 
